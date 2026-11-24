@@ -1,0 +1,9 @@
+{
+  "name": "vellora-house",
+  "version": "1.0.0",
+  "description": "Vellora House - boutique heritage hotel and estate homestays (Boutique Hotel Web One)",
+  "scripts": {
+    "build": "node build.js",
+    "start": "node server.js"
+  }
+}

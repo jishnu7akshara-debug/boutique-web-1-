@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Vellora House | Heritage hotel and estate homestays in Coorg</title>
+<meta name="description" content="A 1920s planter's bungalow in Madikeri, Coorg, kept as an eleven-suite heritage hotel, with three estate homestays in the coffee hills around it." />
+<meta name="theme-color" content="#24423A" />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Hanken+Grotesk:ital,wght@0,300..700;1,400&display=swap" rel="stylesheet" />
+<link rel="preload" as="image" href="assets/video/hero-film-poster.jpg" />
+<link rel="stylesheet" href="css/styles.css" />
+<script src="js/vendor/gsap.min.js" defer></script>
+<script src="js/vendor/ScrollTrigger.min.js" defer></script>
+<script src="js/vendor/lenis.min.js" defer></script>
+<script src="js/main.js" defer></script>
+</head>
+<body class="is-loading">
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- Opening: louvred shutters swing open onto the bungalow -->
+<div class="shutters" aria-hidden="true">
+  <div class="shutter shutter--l"><span class="shutter__frame"></span></div>
+  <div class="shutter shutter--r"><span class="shutter__frame"></span></div>
+  <p class="shutters__mark">Vellora House</p>
+</div>
+
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#top" aria-label="Vellora House home">
+    <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M6 36V17a14 14 0 0 1 28 0v19" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 36V20a6 6 0 0 1 12 0v16M20 14v22" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+    <span>Vellora House</span>
+  </a>
+  <nav class="nav__links" aria-label="Main">
+    <a href="#suites">Suites</a>
+    <a href="#homestays">Homestays</a>
+    <a href="#table">Dining</a>
+    <a href="#gatherings">Gatherings</a>
+    <a href="#visit">Getting here</a>
+  </nav>
+  <a class="btn btn--cherry nav__cta" href="#book">Book a stay</a>
+  <button class="nav__burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span></button>
+</header>
+
+<div class="drawer" id="drawer" hidden>
+  <a href="#suites">Suites</a>
+  <a href="#homestays">Homestays</a>
+  <a href="#table">Dining</a>
+  <a href="#gatherings">Gatherings</a>
+  <a href="#visit">Getting here</a>
+  <a class="btn btn--cherry" href="#book">Book a stay</a>
+</div>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero__media" data-hero-media>
+    <video class="hero__video" autoplay muted loop playsinline preload="auto" poster="assets/video/hero-film-poster.jpg">
+      <source src="assets/video/hero-film.mp4" type="video/mp4" />
+    </video>
+    <div class="hero__shade"></div>
+  </div>
+  <div class="hero__copy wrap">
+    <p class="hero__place">Madikeri, Kodagu &nbsp;/&nbsp; since 1921</p>
+    <h1 class="hero__title" data-split>
+      <span class="line"><span>A planter's bungalow,</span></span>
+      <span class="line"><span>kept the old way.</span></span>
+    </h1>
+    <p class="hero__lede">Eleven suites behind green shutters, a long table that serves Kodava food, and three homestays out in the coffee.</p>
+  </div>
+
+  <form class="booker" id="book" data-booker>
+    <fieldset class="booker__type">
+      <legend class="sr-only">Stay type</legend>
+      <label><input type="radio" name="stay" value="a suite at the House" checked /><span>The House</span></label>
+      <label><input type="radio" name="stay" value="an estate homestay" /><span>Estate homestay</span></label>
+    </fieldset>
+    <label class="booker__field"><span>Arrive</span><input type="date" name="in" required /></label>
+    <label class="booker__field"><span>Leave</span><input type="date" name="out" required /></label>
+    <label class="booker__field booker__field--sm"><span>Guests</span>
+      <select name="guests"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6+</option></select>
+    </label>
+    <button class="btn btn--cherry booker__go" type="submit">Check dates on WhatsApp</button>
+    <p class="booker__note" aria-live="polite"></p>
+  </form>
+</section>
+
+<!-- STORY -->
+<section class="story" id="story">
+  <div class="wrap story__grid">
+    <div class="story__text">
+      <p class="story__big" data-words>The house was built for a coffee planter in 1921 and has had four owners since. We kept the teak floors, the lime-washed walls and every one of the shutters. What we added is quieter: deep baths, good beds, and a kitchen that cooks the way Kodava homes do.</p>
+      <dl class="facts">
+        <div><dt>Suites</dt><dd>11</dd></div>
+        <div><dt>Above sea level</dt><dd>1,150 m</dd></div>
+        <div><dt>Estate homestays</dt><dd>3</dd></div>
+        <div><dt>From Bengaluru</dt><dd>5½ hrs</dd></div>
+      </dl>
+    </div>
+    <figure class="story__arch" data-arch>
+      <img src="assets/img/bungalow.jpg" alt="White lime-washed bungalow with a tiled roof and tall green-framed windows, on a lawn" loading="lazy" width="1600" height="1067" />
+    </figure>
+  </div>
+</section>
+
+<!-- SUITES: pinned horizontal corridor -->
+<section class="suites" id="suites">
+  <div class="suites__pin">
+    <div class="suites__head wrap">
+      <h2 class="h2">Walk the corridor</h2>
+      <p>Every suite opens onto the long verandah. Rates include breakfast at the long table and estate coffee whenever you ask for it.</p>
+      <div class="suites__progress" aria-hidden="true"><span></span></div>
+    </div>
+    <div class="suites__track">
+      <article class="suite">
+        <div class="suite__img"><img src="assets/img/suite-planter.jpg" alt="Canopy bed draped in white muslin, in a high-ceilinged room with teak doors" loading="lazy" /></div>
+        <div class="suite__body">
+          <h3>The Planter's Suite</h3>
+          <p>The original master bedroom. Canopy bed, two sets of garden doors, a dressing room the size of a small flat.</p>
+          <ul class="suite__meta"><li>62 m²</li><li>Sleeps 2 + 1</li><li>From ₹18,500 a night</li></ul>
+          <a class="link" href="#book" data-suite="The Planter's Suite">Ask for this suite</a>
+        </div>
+      </article>
+      <article class="suite">
+        <div class="suite__img"><img src="assets/img/verandah-room.jpg" alt="Sitting room with a daybed, a cane armchair and tall green shuttered doors" loading="lazy" /></div>
+        <div class="suite__body">
+          <h3>Verandah Rooms</h3>
+          <p>Four rooms along the east verandah, each with a daybed by the shutters for the morning light.</p>
+          <ul class="suite__meta"><li>38 m²</li><li>Sleeps 2</li><li>From ₹12,800 a night</li></ul>
+          <a class="link" href="#book" data-suite="a Verandah Room">Ask for this room</a>
+        </div>
+      </article>
+      <article class="suite">
+        <div class="suite__img"><img src="assets/img/bath-suite.jpg" alt="Freestanding clawfoot bathtub under three green-framed windows" loading="lazy" /></div>
+        <div class="suite__body">
+          <h3>The Bath House Suite</h3>
+          <p>Built around a freestanding tub under three windows. People book it for the bath and stay in it most of the weekend.</p>
+          <ul class="suite__meta"><li>48 m²</li><li>Sleeps 2</li><li>From ₹15,900 a night</li></ul>
+          <a class="link" href="#book" data-suite="The Bath House Suite">Ask for this suite</a>
+        </div>
+      </article>
+      <article class="suite">
+        <div class="suite__img"><img src="assets/img/spa-suite.jpg" alt="Sunken bath and two cane chairs in a white room with a framed window" loading="lazy" /></div>
+        <div class="suite__body">
+          <h3>Garden Spa Rooms</h3>
+          <p>Two ground-floor rooms with a soaking tub and a private door to the herb garden and the treatment room.</p>
+          <ul class="suite__meta"><li>44 m²</li><li>Sleeps 2</li><li>From ₹14,200 a night</li></ul>
+          <a class="link" href="#book" data-suite="a Garden Spa Room">Ask for this room</a>
+        </div>
+      </article>
+      <article class="suite suite--end">
+        <div class="suite__img"><img src="assets/img/reading-room.jpg" alt="Lounge with a long teak coffee table, white sofas and candles" loading="lazy" /></div>
+        <div class="suite__body">
+          <h3>Taking the whole house</h3>
+          <p>All eleven suites, the reading room and the lawn, for families and small weddings of up to 26 guests.</p>
+          <a class="link" href="#gatherings">See gatherings</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- TABLE / DINING -->
+<section class="table" id="table">
+  <div class="wrap table__grid">
+    <div class="table__window" data-reveal="left">
+      <video autoplay muted loop playsinline preload="metadata" poster="assets/video/candle-poster.jpg">
+        <source src="assets/video/candle.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="table__copy">
+      <h2 class="h2">The long table</h2>
+      <p>One sitting at eight, everyone at the same teak table, unless you'd rather eat on your verandah. The menu follows whatever the kitchen garden and the Madikeri market had that morning.</p>
+      <ul class="menu">
+        <li><span>Pandi curry with kachampuli</span><em>the house's oldest recipe</em></li>
+        <li><span>Akki roti, chutney pudi, butter</span><em>breakfast, every day</em></li>
+        <li><span>Bamboo shoot and jackfruit seed</span><em>monsoon only</em></li>
+        <li><span>Estate filter coffee</span><em>from our homestay at Nakoor</em></li>
+      </ul>
+    </div>
+  </div>
+  <div class="table__strip wrap">
+    <figure data-speed="-0.08"><img src="assets/img/dining-room.jpg" alt="Round tables laid with white cloths and cane chairs in a bright dining room" loading="lazy" /></figure>
+    <figure data-speed="0.06"><img src="assets/img/dining-chandelier.jpg" alt="Long dark wood dining table under a chandelier, with brick walls" loading="lazy" /></figure>
+    <figure data-speed="-0.04"><img src="assets/img/dining-table.jpg" alt="Table set for dinner with wine glasses between framed photographs" loading="lazy" /></figure>
+  </div>
+</section>
+
+<!-- HOMESTAYS -->
+<section class="homestays" id="homestays">
+  <div class="homestays__band">
+    <video autoplay muted loop playsinline preload="metadata" poster="assets/video/estate-poster.jpg" data-speed-bg>
+      <source src="assets/video/estate.mp4" type="video/mp4" />
+    </video>
+    <div class="homestays__band-copy wrap">
+      <h2 class="h2 h2--light" data-split>
+        <span class="line"><span>Or stay out in the coffee,</span></span>
+        <span class="line"><span>twenty minutes up the hill.</span></span>
+      </h2>
+    </div>
+  </div>
+
+  <div class="wrap homestays__body">
+    <p class="homestays__intro">Three family homes on working estates, run by the families who live next door. You get the whole house, a cook if you want one, and a walk through the plantation with whoever is picking that week. Breakfast at Vellora House is always included.</p>
+
+    <div class="tabs" data-tabs>
+      <div class="tabs__list" role="tablist" aria-label="Estate homestays">
+        <button role="tab" aria-selected="true" aria-controls="hs-1" id="t-1">Blue Mountain</button>
+        <button role="tab" aria-selected="false" aria-controls="hs-2" id="t-2" tabindex="-1">Nakoor Estate</button>
+        <button role="tab" aria-selected="false" aria-controls="hs-3" id="t-3" tabindex="-1">Paddy House</button>
+      </div>
+
+      <div class="tabs__panel" role="tabpanel" id="hs-1" aria-labelledby="t-1">
+        <figure class="hs__img"><img src="assets/img/homestay-bluemountain.jpg" alt="Two-storey white house with a balcony, surrounded by palms and estate trees" loading="lazy" /></figure>
+        <div class="hs__copy">
+          <h3>Blue Mountain</h3>
+          <p>A two-storey house at the top of a robusta estate near Inakanahalli. Four bedrooms, a balcony that looks out over the canopy, and the best birdwatching of the three.</p>
+          <ul class="hs__facts"><li>4 bedrooms, sleeps 8</li><li>Cook and caretaker on site</li><li>From ₹16,000 a night for the house</li></ul>
+          <a class="btn btn--line" href="#book" data-homestay="Blue Mountain">Ask about Blue Mountain</a>
+        </div>
+      </div>
+      <div class="tabs__panel" role="tabpanel" id="hs-2" aria-labelledby="t-2" hidden>
+        <figure class="hs__img"><img src="assets/img/homestay-nakoor.jpg" alt="Single-storey white estate bungalow with a red plinth and a tiled roof among tall trees" loading="lazy" /></figure>
+        <div class="hs__copy">
+          <h3>Nakoor Estate</h3>
+          <p>The old estate manager's bungalow near Suntikoppa, still on a working coffee, pepper and areca farm. Our breakfast coffee comes from here.</p>
+          <ul class="hs__facts"><li>3 bedrooms, sleeps 6</li><li>Plantation walk every morning</li><li>From ₹12,500 a night for the house</li></ul>
+          <a class="btn btn--line" href="#book" data-homestay="Nakoor Estate">Ask about Nakoor</a>
+        </div>
+      </div>
+      <div class="tabs__panel" role="tabpanel" id="hs-3" aria-labelledby="t-3" hidden>
+        <figure class="hs__img"><img src="assets/img/homestay-veranda.jpg" alt="Wooden verandah railing under a thatched roof looking over misty trees" loading="lazy" /></figure>
+        <div class="hs__copy">
+          <h3>Paddy House</h3>
+          <p>A small cottage with a thatched verandah at the edge of the paddy fields. Two rooms, no television, and frogs for most of the monsoon.</p>
+          <ul class="hs__facts"><li>2 bedrooms, sleeps 4</li><li>Meals from the family kitchen</li><li>From ₹7,800 a night for the cottage</li></ul>
+          <a class="btn btn--line" href="#book" data-homestay="Paddy House">Ask about Paddy House</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="estate-row">
+      <figure data-reveal="left"><img src="assets/img/coffee-cherries.jpg" alt="Cluster of ripe red and yellow coffee cherries" loading="lazy" /><figcaption>Robusta, ripening in December</figcaption></figure>
+      <figure data-reveal="up"><img src="assets/img/paddy-fields.jpg" alt="Paddy field at the edge of a forest of shade trees" loading="lazy" /><figcaption>The paddy below Paddy House</figcaption></figure>
+      <figure data-reveal="right"><img src="assets/img/pepper-estate.jpg" alt="Tall trees with pepper vines climbing them in an estate garden" loading="lazy" /><figcaption>Pepper vines on silver oak at Nakoor</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- MONSOON -->
+<section class="monsoon">
+  <video autoplay muted loop playsinline preload="metadata" poster="assets/video/rain-poster.jpg">
+    <source src="assets/video/rain.mp4" type="video/mp4" />
+  </video>
+  <div class="monsoon__copy wrap">
+    <h2 class="h2 h2--light">June to September, it rains.</h2>
+    <p>We think it's the best time to come. The waterfalls are full, the estates go a green you won't believe, and the fires are lit by four. Monsoon stays of three nights or more are 25% off, with a waterfall drive and an evening of Kodava cooking.</p>
+    <a class="btn btn--paper" href="#book" data-suite="the monsoon stay">Plan a monsoon stay</a>
+  </div>
+</section>
+
+<!-- GATHERINGS: day to night comparison -->
+<section class="gatherings" id="gatherings">
+  <div class="wrap gatherings__grid">
+    <div class="gatherings__copy">
+      <h2 class="h2">Gatherings on the old lawn</h2>
+      <p>Our sister property, a restored zamindari house with a sunken lawn, hosts weddings, anniversaries and company offsites from 40 to 220 guests. Drag across the picture to see it go from afternoon to lamp-light.</p>
+      <ul class="hs__facts"><li>Lawn for 220, courtyard for 80</li><li>Kodava, Bengali and continental menus</li><li>Rooms for 60 across both houses</li></ul>
+      <a class="btn btn--line" href="#book" data-suite="an event enquiry">Enquire about an event</a>
+    </div>
+    <div class="compare" data-compare style="--pos:50%">
+      <img src="assets/img/rajbari-day.jpg" alt="Restored mansion courtyard with a lawn and steps, in daylight" loading="lazy" />
+      <div class="compare__night"><img src="assets/img/rajbari-night.jpg" alt="The same courtyard at night, lit with warm lamps" loading="lazy" /></div>
+      <input class="compare__range" type="range" min="0" max="100" value="50" aria-label="Drag to compare day and night" />
+      <span class="compare__handle" aria-hidden="true"></span>
+      <span class="compare__tag compare__tag--l" aria-hidden="true">Lamp-light</span>
+      <span class="compare__tag compare__tag--r" aria-hidden="true">Afternoon</span>
+    </div>
+  </div>
+</section>
+
+<!-- WELLNESS -->
+<section class="rest">
+  <div class="wrap rest__grid">
+    <figure class="rest__a" data-speed="-0.06"><img src="assets/img/spa-vanity.jpg" alt="Teak wardrobes framing a basin and a mirror in the treatment room" loading="lazy" /></figure>
+    <div class="rest__copy">
+      <h2 class="h2">One treatment room, no menu</h2>
+      <p>Our therapist trained in Kerala and works with oils pressed from the estates. Tell her how your back feels and how long you've got; she'll decide the rest.</p>
+      <p class="rest__small">Sixty or ninety minutes, booked at the front desk.</p>
+    </div>
+    <figure class="rest__b" data-speed="0.08"><img src="assets/img/corridor.jpg" alt="Long covered colonnade with shuttered doors and hanging lamps" loading="lazy" /></figure>
+  </div>
+</section>
+
+<!-- GALLERY MARQUEE -->
+<section class="gallery" aria-label="Photographs of the house and estates">
+  <div class="gallery__track" data-marquee>
+    <img src="assets/img/lobby-bluehour.jpg" alt="Entrance verandah at blue hour, lit from within" loading="lazy" />
+    <img src="assets/img/courtyard-fountain.jpg" alt="Arched courtyard with a fountain and potted plants" loading="lazy" />
+    <img src="assets/img/guesthouse-garden.jpg" alt="Lush garden entrance with palms and a bicycle" loading="lazy" />
+    <img src="assets/img/rajbari-wide.jpg" alt="Wide view of a restored mansion courtyard and lawn" loading="lazy" />
+    <img src="assets/img/hanging-plant.jpg" alt="Coconut shell planter hanging among ferns" loading="lazy" />
+    <img src="assets/img/rajbari-lawn.jpg" alt="Mansion courtyard with a grand staircase and gardens" loading="lazy" />
+  </div>
+</section>
+
+<!-- GETTING HERE -->
+<section class="visit" id="visit">
+  <div class="wrap visit__grid">
+    <h2 class="h2">Getting here</h2>
+    <ol class="routes">
+      <li><strong>From Bengaluru</strong><span>About 265 km by road through Mysuru and Kushalnagar, 5½ hours. We can send a car.</span></li>
+      <li><strong>From Mysuru</strong><span>About 120 km, 2½ hours. The nearest railway station.</span></li>
+      <li><strong>From Kannur airport</strong><span>About 95 km over the ghats, 2½ hours. Closest airport to the house.</span></li>
+      <li><strong>From Mangaluru</strong><span>About 140 km, 3½ hours. Airport and railway.</span></li>
+    </ol>
+    <p class="visit__addr">Vellora House, Stuart Hill Road, Madikeri, Kodagu 571201<br />Front desk, 7 am to 11 pm: <a href="tel:+919800000000">+91 98000 00000</a></p>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__grid">
+    <div>
+      <p class="foot__brand">Vellora House</p>
+      <p>Heritage hotel and estate homestays, Coorg.</p>
+    </div>
+    <div class="foot__links">
+      <a href="#suites">Suites</a><a href="#homestays">Homestays</a><a href="#table">Dining</a><a href="#gatherings">Gatherings</a>
+    </div>
+    <div class="foot__links">
+      <a href="https://wa.me/919800000000" rel="noopener">WhatsApp</a><a href="mailto:stay@vellorahouse.in">stay@vellorahouse.in</a><a href="https://instagram.com/" rel="noopener">Instagram</a>
+    </div>
+  </div>
+  <p class="wrap foot__fine">© <span data-year></span> Vellora House. Photographs and footage: see CREDITS.md.</p>
+</footer>
+
+<a class="wa-float" href="https://wa.me/919800000000" aria-label="Chat with the front desk on WhatsApp" rel="noopener">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.7-1.2 2.2 2.2 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3Z"/></svg>
+</a>
+</body>
+</html>
